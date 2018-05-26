@@ -1,0 +1,16 @@
+# Pinout at http://www.pighixxx.net/wp-content/uploads/2016/02/icestick_pinout.png
+
+set_io clk 21
+set_io power_led 95
+
+# Serial I/O
+set_io rx 9
+set_io tx 8
+
+# DMX pin format:
+# dmx# - D+ for universe
+# dmx#n - D- for universe
+# dmx#s - Status LED for universe
+set_io dmx1 44
+set_io dmx1n 45
+set_io dmx1s 96
