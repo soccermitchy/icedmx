@@ -3,9 +3,9 @@
 `define DUMPSTR(x) `"x.vcd`"
 
 module dmx_tb();
-    parameter duration = 1000;
+    parameter duration = 175000;
     reg clk = 0;
-    always #2 clk = ~clk;
+    always #1 clk = ~clk;
     wire dmx_signal;
     dmx d0(
         .dmxclk(clk),

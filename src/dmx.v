@@ -1,6 +1,6 @@
 module dmx(
     input wire dmxclk,
-    output reg signal
+    output wire signal
 );
     // this is just for me to figure out how many cycles I need for everything
     
@@ -23,26 +23,30 @@ module dmx(
     // channel data for 4096 cycles (82500)
     // go back to cycle 0
 
+    // initial values of stuff
     reg [19:0] counter = 0;
+    reg signal_out = 0;
+    assign signal = signal_out;
+    // assign signal = signal_out;
     always @(posedge dmxclk) begin
-        if (counter == 330000) begin 
+        if (counter == 82500) begin 
             counter = 0;
         end else begin
             counter = counter + 1;
         end
 
-        if (counter < 78393) begin
-            assign signal = 1;
-        end else if (counter >= 78393 && counter < 78395) begin
-            assign signal = 0;
-        end else if (counter >= 78395 && counter < 78396) begin
-            assign signal = 1;
-        end else if (counter >= 78396 && counter < 78404) begin
-            assign signal = 0;
-        end else if (counter >= 78404 && counter < 82500) begin
-            assign signal = 1;
-        end else begin
-            assign signal = 0;
+        if (counter < 78393) begin // Break
+            assign signal_out = 1;
+        end else if (counter >= 78393 && counter < 78395) begin // Mark-after-break
+            assign signal_out = 0;
+        end else if (counter >= 78395 && counter < 78396) begin // Start Bit
+            assign signal_out = 1;
+        end else if (counter >= 78396 && counter < 78404) begin // Start Channel
+            assign signal_out = 0;
+        end else if (counter >= 78404 && counter < 82500) begin // Individual channel data
+            assign signal_out = ~signal_out;
+        end else begin // Catch-all? /shrug
+            assign signal_out = 0;
         end
     end
 endmodule
