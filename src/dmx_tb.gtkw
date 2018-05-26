@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.89 (w)1999-2018 BSI
+[*] Sat May 26 04:50:45 2018
+[*]
+[dumpfile] "/home/mitchell/code/icestick/icedmx/.pioenvs/icestick/dmx_tb.vcd"
+[dumpfile_mtime] "Sat May 26 04:50:17 2018"
+[dumpfile_size] 7055
+[savefile] "/home/mitchell/code/icestick/icedmx/src/dmx_tb.gtkw"
+[timestart] 0
+[size] 1920 1016
+[pos] -51 -51
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] dmx_tb.
+[sst_width] 229
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 286
+@22
+dmx_tb.d0.counter[19:0]
+@28
+dmx_tb.d0.dmxclk
+dmx_tb.d0.signal
+[pattern_trace] 1
+[pattern_trace] 0

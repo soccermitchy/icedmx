@@ -1,8 +1,7 @@
 module dmx(
     input wire dmxclk,
-    output wire signal
+    output reg signal
 );
-    assign signal = 0;
     // this is just for me to figure out how many cycles I need for everything
     
     // break - can be any length of time
@@ -33,17 +32,17 @@ module dmx(
         end
 
         if (counter < 78393) begin
-            signal <= 1;
-        end else if (counter >= 78393 and counter < 78395) begin
-            signal <= 0;
-        end else if (counter => 78395 and counter < 78396) begin
-            signal <= 1;
-        end else if (counter => 78396 and counter < 78404) begin
-            signal <= 0;
-        end else if (counter => 78404 and counter < 82500) begin
-            signal <= 1;
+            assign signal = 1;
+        end else if (counter >= 78393 && counter < 78395) begin
+            assign signal = 0;
+        end else if (counter >= 78395 && counter < 78396) begin
+            assign signal = 1;
+        end else if (counter >= 78396 && counter < 78404) begin
+            assign signal = 0;
+        end else if (counter >= 78404 && counter < 82500) begin
+            assign signal = 1;
         end else begin
-            counter = 0;
+            assign signal = 0;
         end
     end
 endmodule
