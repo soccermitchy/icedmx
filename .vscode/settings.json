@@ -2,5 +2,9 @@
     "terminal.integrated.env.windows": {
         "PATH": "C:\\Users\\Mitchell\\.platformio\\penv\\Scripts;C:\\Users\\Mitchell\\.platformio\\penv;f:\\devkitPro\\msys2\\usr\\bin;F:\\Program Files (x86)\\Python36-32\\Scripts\\;F:\\Program Files (x86)\\Python36-32\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Users\\Mitchell\\AppData\\Local\\Microsoft\\WindowsApps;;F:\\Program Files\\Microsoft VS Code\\bin;f:\\devkitPro\\msys2\\usr\\bin;F:\\Program Files (x86)\\Python36-32\\Scripts\\;F:\\Program Files (x86)\\Python36-32\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Users\\Mitchell\\AppData\\Local\\Microsoft\\WindowsApps;;F:\\Program Files\\Microsoft VS Code\\bin",
         "PLATFORMIO_CALLER": "vscode"
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/mitchell/.platformio/penv/bin:/home/mitchell/.platformio/penv:/home/mitchell/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/opt/cuda/bin:/opt/devkitpro/devkitARM/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/cuda/bin:/opt/devkitpro/devkitARM/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/cuda/bin:/opt/devkitpro/devkitARM/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+        "PLATFORMIO_CALLER": "vscode"
     }
 }
